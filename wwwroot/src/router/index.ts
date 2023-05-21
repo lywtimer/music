@@ -1,14 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MusicView from "../views/MusicView.vue"
 import HomeView from "../views/HomeView.vue"
+import Home from "@/views/memory/Home.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/music',
+      name: 'music',
+      component: HomeView
+    },
+    {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: Home
     },
     {
       path: '/center',
