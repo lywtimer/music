@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <router-link to="/musicInfo">Go to info</router-link>
   </div>
 </template>
 

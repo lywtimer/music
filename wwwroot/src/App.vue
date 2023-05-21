@@ -1,13 +1,13 @@
 <template>
-  <TopNav></TopNav>
+  <router-view></router-view>
 </template>
 
 <script>
-import TopNav from './components/home/TopNav.vue';
+
 export default {
   name: 'App',
   components: {
-    TopNav
+
   }
 }
 </script>
@@ -18,11 +18,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-.icon {
-  width: .5rem;
-  height: .5rem;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+
+a{
+  color: black;
 }
 </style>

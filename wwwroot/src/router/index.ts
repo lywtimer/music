@@ -17,6 +17,12 @@ const router = createRouter({
       component: () => import('../views/CenterView.vue')
     },
     {
+      path: '/musicInfo',
+      name: 'music-info',
+      // component: MusicView
+      component: () => import('../views/MusicInfo.vue')
+    },
+    {
       path: '/music',
       name: 'music',
       component: MusicView
